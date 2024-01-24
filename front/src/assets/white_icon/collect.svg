@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/collect</title>
+    <defs>
+        <rect id="path-1" x="340" y="188" width="295" height="352" rx="2.08"></rect>
+        <filter x="-4.4%" y="-3.1%" width="108.8%" height="107.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.09 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter id="filter-3">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.000000 0 0 0 0 0.000000 0 0 0 0 0.000000 0 0 0 0.500000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2工作流" transform="translate(-436.000000, -448.000000)">
+            <rect id="矩形备份-4" stroke="#979797" fill="#FFFFFF" x="0.5" y="64.5" width="1919" height="2130"></rect>
+            <g id="Rectangle-5-Copy-4">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <rect stroke="#E9E9E9" stroke-width="1.04" stroke-linejoin="square" fill="#FFFFFF" fill-rule="evenodd" x="340.52" y="188.52" width="293.96" height="350.96" rx="2.08"></rect>
+            </g>
+            <g id="收藏" transform="translate(436.000000, 448.000000)" filter="url(#filter-3)">
+                <g>
+                    <rect id="矩形" fill="#000000" fill-rule="nonzero" opacity="0" x="0" y="0" width="16" height="16"></rect>
+                    <path d="M8.5,1.65 L10.35,5.4 L14.5,6 C15,6.05 15.15,6.65 14.8,7 L11.8,9.9 L12.5,14 C12.6,14.45 12.1,14.85 11.65,14.6 L8,12.65 L4.3,14.6 C3.9,14.85 3.4,14.5 3.45,14 L4.15,9.9 L1.15,7 C0.85,6.65 1,6.05 1.5,6 L5.65,5.4 L7.5,1.65 C7.7,1.2 8.3,1.2 8.5,1.65 Z" id="路径" fill="#000000" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

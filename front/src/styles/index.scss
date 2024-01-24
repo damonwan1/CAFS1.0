@@ -1,0 +1,105 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './sidebar.scss';
+@import './element-ui.scss';
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+  // overflow-x: hidden;
+  // min-width:1280px;
+  // @media only screen and (max-width: 1700px) {
+    //媒体查询响应式用
+  //   background-color:green;
+  // }
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+//main-container全局样式
+.app-main {
+  min-height: calc(100% - 50px);
+}
+
+.app-container {
+  padding: 20px;
+}
+
+.document-description {
+  h3 {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    position: relative;
+    i {
+      position: absolute;
+      top:50%;
+      transform: translateY(-50%);
+      width: 4px;
+      border-radius: 2px;
+      height: 16px;
+      background: #01adff;
+    }
+    span {
+      padding-left: 10px;
+    }
+  }
+}
