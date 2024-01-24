@@ -1,6 +1,6 @@
 
 # CAFS 1.0: Terrestrial Ecosystem Carbon Cycle Assimilation and Forecasting System
-[Chinese](./README_ZH.md)
+[English](./README.md)||[中文版](./README_ZH.md)
 ## Introduction
 CAFS 1.0 is an advanced system for near-term iterative prediction of terrestrial ecosystem carbon dynamics at site scale. This system integrates real-time meteorological and biometric observation data using data fusion and deep learning techniques. Successfully applied in four forest sites in China, CAFS 1.0 represents a breakthrough in ecological forecasting and ecosystem management.
 ![Example of CAFS1.0](images/example1.png)
