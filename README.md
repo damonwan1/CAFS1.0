@@ -38,11 +38,11 @@ CAFS 1.0 is composed of a Vue.js frontend and a Java Spring Boot backend.
    ```
 2. Build the Spring Boot application (ensure you have Java JDK installed):
    ```
-   ./mvnw clean install
+   ./mvn clean install
    ```
 3. Run the Spring Boot application:
    ```
-   ./mvnw spring-boot:run
+   ./mvn spring-boot:run
    ```
 
 ## Usage
@@ -52,7 +52,7 @@ Provide instructions and examples on how to use the system. Include screenshots 
 Contributions to CAFS 1.0 are welcome. Please read `CONTRIBUTING.md` for our contribution guidelines and the process for submitting pull requests.
 
 ## License
-This project is licensed under [LICENSE NAME] - see the `LICENSE` file for details.
+This project is licensed under [MIT] - see the `MIT` file for details.
 
 ## Acknowledgements
 Extend thanks to collaborators, funding bodies, and contributors who have been instrumental in the development of CAFS 1.0.
