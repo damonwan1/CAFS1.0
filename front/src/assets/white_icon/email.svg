@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/email</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1921" height="198"></rect>
+        <filter x="-0.3%" y="-2.8%" width="100.7%" height="106.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0.0823529412   0 0 0 0 0.160784314  0 0 0 0.12 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1首页" transform="translate(-993.000000, -1951.000000)">
+            <g id="Rectangle-2-Copy备份-2" transform="translate(0.000000, 1859.000000)">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#122627" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <g id="icon/email" transform="translate(993.000000, 1951.000000)" fill-rule="nonzero">
+                <rect id="矩形备份" fill="#FFFFFF" opacity="0" x="0" y="-3.55271368e-15" width="32" height="32"></rect>
+                <path d="M16.0083333,1.95575 C8.24804362,1.95575 1.95676862,8.24375 1.95676862,16 C1.95676862,23.75625 8.24804362,30.04425 16.0083333,30.04425 C23.768623,30.04425 30.059898,23.75625 30.059898,16 C30.059898,8.24375 23.768623,1.95575 16.0083333,1.95575 Z" id="路径" stroke="#FFFFFF" opacity="0.652902"></path>
+                <g id="编组-2" opacity="0.650493" transform="translate(9.991139, 10.684375)" fill="#FFFFFF">
+                    <path d="M1.35226644,0 L12.1688346,0 C12.9067187,0 13.5117212,0.5890625 13.5211011,1.3109375 L6.76289551,5.01875 L0.00625325521,1.315625 C0.0125065104,0.590625 0.61281901,0 1.35226644,0 Z" id="路径"></path>
+                    <path d="M0.00625325521,2.734375 L-4.62093327e-14,9.290625 C-4.62093327e-14,10.0203125 0.608129069,10.6171875 1.35226644,10.6171875 L12.1688346,10.6171875 C12.912972,10.6171875 13.5211011,10.0203125 13.5211011,9.290625 L13.5211011,2.73125 L6.92235352,6.265625 C6.82073812,6.3203125 6.69879964,6.3203125 6.59874756,6.265625 L0.00625325521,2.734375 Z" id="路径"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
