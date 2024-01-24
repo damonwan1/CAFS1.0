@@ -1,0 +1,34 @@
+server:
+  port: ###
+  tomcat:
+    max-http-header-size: ###
+logging:
+  level:
+    com.qingqiuyue.*: debug
+spring:
+  thymeleaf:
+    cache: false
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: ###
+    password: ###
+    url: jdbc:mysql://###:###/chinese_as?characterEncoding=UTF-8&useSSL=false
+  main:
+    allow-bean-definition-overriding: true
+linux:
+  ip: ###
+  port: ###
+  userName: ###
+  userPwd: ###
+
+api: http://###/api
+prediction_day_number: 7
+
+
+sftp:
+  host: ###
+  port: ###
+  username: ###
+  password: ###
+  sessionTimeout: 15000
+  channelTimeout: 15000

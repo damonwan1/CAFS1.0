@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.as.demo.mapper.ShowResultMapper">
+
+    <select id="getLastShowResult" resultType="com.as.demo.entity.ShowResult">
+        SELECT *
+        FROM show_result
+        Where site_code = #{site_code}
+                <![CDATA[
+        HAVING create_time >= STR_TO_DATE(#{start}, '%Y-%m-%d')
+           and create_time <= STR_TO_DATE(#{end}, '%Y-%m-%d')
+        ]]>
+        ORDER by id
+    </select>
+
+
+    <insert id="batchInsertShowResults" parameterType="com.as.demo.entity.ShowResult">
+        INSERT INTO show_result (site_code,year, month, day,gpp,npp,nep,ra,rh,cf,cw,cr,cveg,csom,af,aw,ar,tsoil,swc,create_time) VALUES
+        <foreach collection="list" item="item" separator=",">
+            (#{item.siteCode}, #{item.year}, #{item.month},#{item.day},#{item.gpp},#{item.npp},#{item.nep},#{item.ra},#{item.rh},#{item.cf},#{item.cw},
+            #{item.cr},#{item.cveg},#{item.csom},#{item.af},#{item.aw},#{item.ar},#{item.tsoil},#{item.swc},#{item.createTime})
+        </foreach>
+    </insert>
+
+</mapper>

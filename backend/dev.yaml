@@ -1,0 +1,63 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  namespace: dev
+  name: as-demo
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        run: as-demo
+    spec:
+      containers:
+        - name: as-demo
+          image: registry.cn-beijing.aliyuncs.com/dmka/as-demo:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+          env:
+            - name: ENV_SERVER_PORT
+              value: '80'
+            - name: ENV_MYSQL_HOST
+              value: mysql-dev
+            - name: ENV_MYSQL_PASSWORD
+              value: root
+            - name: ENV_MYSQL_PORT
+              value: '3306'
+            - name: ENV_MYSQL_USERNAME
+              value: root
+      imagePullSecrets:
+        - name: dev-regsecret
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: as-demo
+  namespace: dev
+  labels:
+    app: as-demo
+spec:
+  ports:
+    - port: 80
+      protocol: TCP
+      name: http
+  selector:
+    run: as-demo
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: as-demo
+  namespace: dev
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+spec:
+  rules:
+    - host: as-demo-dev.wtzhaopin.com
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: as-demo
+              servicePort: 80
